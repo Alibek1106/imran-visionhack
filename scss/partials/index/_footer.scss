@@ -1,0 +1,21 @@
+.footer{
+  padding: 40px 0;
+  background: #00051F;
+  font-family: "Raleway", sans-serif;
+
+  .footer-wrapper{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+
+    .footer-ul{
+      display: flex;
+
+      li:not(:last-child){
+        margin-right: 60px;
+      }
+    }
+  }
+}

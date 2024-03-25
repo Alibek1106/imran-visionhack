@@ -1,0 +1,52 @@
+.schedule{
+  background: url("../../../images/material/schedule-bg.png");
+  padding: 80px 0;
+
+  h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .schedule-boxes{
+    display: flex;
+    justify-content: space-between;
+
+    .schedule-box{
+      background: url("../../../images/material/schedule-boxes-bg.svg") no-repeat;
+      width: 333px;
+      padding: 50px 0;
+
+      .schedule-box-img{
+        width: 206px;
+        height: 206px;
+        background: #400DAD;
+        border-radius: 100%;
+        display: flex;
+        margin: 0 auto 40px;
+
+        img{
+          margin: auto;
+          filter: drop-shadow(0 0 0.75rem #fff);
+        }
+      }
+
+      .schedule-box-text{
+        text-align: center;
+
+        h5{
+          font-size: 24px;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          font-weight: 700;
+        }
+
+        p{
+          font-family: "Raleway", sans-serif;
+        }
+      }
+    }
+  }
+}

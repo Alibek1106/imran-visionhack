@@ -1,0 +1,46 @@
+.hero{
+  background: url("../../../images/material/hero-bg-lines.svg"), url("../../../images/material/hero-bg.png");
+
+  padding: 150px 0;
+  color: #fff;
+
+  .hero-sides{
+    display: flex;
+    align-items: center;
+
+
+    .hero-left{
+      width: 605px;
+
+      h1{
+        font-size: 35px;
+        line-height: 120%;
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+        font-weight: 800;
+      }
+
+      .hero-auth{
+        display: flex;
+        margin-top: 20px;
+
+        button{
+          color: #fff;
+          font-family: "Raleway", sans-serif;
+          text-transform: uppercase;
+        }
+
+        #hero-auth-login{
+          background: #C110CD;
+          padding: 15px 30px;
+          box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+          margin-right: 30px;
+        }
+        
+        #hero-auth-signin{
+          text-decoration: underline;
+
+        }
+      }
+    }
+  }
+}

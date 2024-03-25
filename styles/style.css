@@ -1,0 +1,195 @@
+.header {
+  background: #00051F;
+  padding: 30px 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+.header .header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-row ul {
+  display: flex;
+  align-items: center;
+}
+.header .header-row ul li:not(:last-child) {
+  margin-right: 30px;
+}
+.header .header-row ul .header-login {
+  background: rgba(182, 36, 205, 0.3019607843);
+  border: 1px solid #FD60D3;
+  padding: 3px 20px;
+}
+.header .header-row ul .header-signin {
+  background: #C110CD;
+  padding: 3px 20px;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.hero {
+  background: url("../../../images/material/hero-bg-lines.svg"), url("../../../images/material/hero-bg.png");
+  padding: 150px 0;
+  color: #fff;
+}
+.hero .hero-sides {
+  display: flex;
+  align-items: center;
+}
+.hero .hero-sides .hero-left {
+  width: 605px;
+}
+.hero .hero-sides .hero-left h1 {
+  font-size: 35px;
+  line-height: 120%;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  font-weight: 800;
+}
+.hero .hero-sides .hero-left .hero-auth {
+  display: flex;
+  margin-top: 20px;
+}
+.hero .hero-sides .hero-left .hero-auth button {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+.hero .hero-sides .hero-left .hero-auth #hero-auth-login {
+  background: #C110CD;
+  padding: 15px 30px;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  margin-right: 30px;
+}
+.hero .hero-sides .hero-left .hero-auth #hero-auth-signin {
+  text-decoration: underline;
+}
+
+.problems {
+  background: url("../../../images/material/problem-bg.png");
+  background-size: cover;
+}
+.problems .problems-wrapper h2 {
+  font-size: 29px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100%;
+  margin-bottom: 50px;
+  font-weight: 900;
+}
+.problems .problems-wrapper .problems-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.problems .problems-wrapper .problems-boxes .problems-box {
+  width: 360px;
+  background: rgba(163, 91, 255, 0.2);
+  border: 0.88px solid #A35BFF;
+}
+.problems .problems-wrapper .problems-boxes .problems-box .problems-box-descr {
+  padding: 10px 30px;
+}
+
+.schedule {
+  background: url("../../../images/material/schedule-bg.png");
+  padding: 80px 0;
+}
+.schedule h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.schedule .schedule-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.schedule .schedule-boxes .schedule-box {
+  background: url("../../../images/material/schedule-boxes-bg.svg") no-repeat;
+  width: 333px;
+  padding: 50px 0;
+}
+.schedule .schedule-boxes .schedule-box .schedule-box-img {
+  width: 206px;
+  height: 206px;
+  background: #400DAD;
+  border-radius: 100%;
+  display: flex;
+  margin: 0 auto 40px;
+}
+.schedule .schedule-boxes .schedule-box .schedule-box-img img {
+  margin: auto;
+  filter: drop-shadow(0 0 0.75rem #fff);
+}
+.schedule .schedule-boxes .schedule-box .schedule-box-text {
+  text-align: center;
+}
+.schedule .schedule-boxes .schedule-box .schedule-box-text h5 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.schedule .schedule-boxes .schedule-box .schedule-box-text p {
+  font-family: "Raleway", sans-serif;
+}
+
+.forms {
+  background: url("../../../images/material/forms-circle.png") no-repeat, url("../../../images/material/forms-bg.png"), #dbd7f3;
+  padding: 300px 0 100px;
+}
+.forms form {
+  display: flex;
+}
+.forms form .forms-wrapper {
+  margin-left: auto;
+  color: #fff;
+}
+.forms form .forms-wrapper h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.forms form .forms-wrapper .form-el {
+  font-family: "Raleway", sans-serif;
+}
+.forms form .forms-wrapper .form-el input {
+  margin-bottom: 30px;
+  padding: 15px 20px;
+  width: 500px;
+}
+.forms form .forms-wrapper button {
+  text-transform: uppercase;
+  color: #fff;
+  width: 500px;
+  background: #C110CD;
+  padding: 17px 0;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.footer {
+  padding: 40px 0;
+  background: #00051F;
+  font-family: "Raleway", sans-serif;
+}
+.footer .footer-wrapper {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.footer .footer-wrapper .footer-ul {
+  display: flex;
+}
+.footer .footer-wrapper .footer-ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+/*# sourceMappingURL=style.css.map */
