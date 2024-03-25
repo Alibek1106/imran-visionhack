@@ -29,7 +29,7 @@
 }
 
 .hero {
-  background: url("../images/material/hero-bg-lines.svg"), url("../../images/material/hero-bg.png");
+  background: url("../images/material/hero-bg-lines.svg"), url("../images/material/hero-bg.png");
   padding: 150px 0;
   color: #fff;
 }
