@@ -29,7 +29,7 @@
 }
 
 .hero {
-  background: url("../../../images/material/hero-bg-lines.svg"), url("../../../images/material/hero-bg.png");
+  background: url("../../images/material/hero-bg-lines.svg"), url("../../images/material/hero-bg.png");
   padding: 150px 0;
   color: #fff;
 }
@@ -66,7 +66,7 @@
 }
 
 .problems {
-  background: url("../../../images/material/problem-bg.png");
+  background: url("../../images/material/problem-bg.png");
   background-size: cover;
 }
 .problems .problems-wrapper h2 {
@@ -95,7 +95,7 @@
 }
 
 .schedule {
-  background: url("../../../images/material/schedule-bg.png");
+  background: url("../../images/material/schedule-bg.png");
   padding: 80px 0;
 }
 .schedule h2 {
@@ -110,7 +110,7 @@
   justify-content: space-between;
 }
 .schedule .schedule-boxes .schedule-box {
-  background: url("../../../images/material/schedule-boxes-bg.svg") no-repeat;
+  background: url("../../images/material/schedule-boxes-bg.svg") no-repeat;
   width: 333px;
   padding: 50px 0;
 }
@@ -140,7 +140,7 @@
 }
 
 .forms {
-  background: url("../../../images/material/forms-circle.png") no-repeat, url("../../../images/material/forms-bg.png"), #dbd7f3;
+  background: url("../../images/material/forms-circle.png") no-repeat, url("../../images/material/forms-bg.png"), #dbd7f3;
   padding: 300px 0 100px;
 }
 .forms form {
