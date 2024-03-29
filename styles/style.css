@@ -192,4 +192,161 @@
   margin-right: 60px;
 }
 
+.user-sidebar {
+  width: 20%;
+  padding: 80px 20px 80px 0;
+}
+.user-sidebar h2 {
+  font-size: 36px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.user-sidebar ul {
+  list-style: inside;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+}
+.user-sidebar ul li:not(:last-child) {
+  margin-bottom: 40px;
+}
+.user-sidebar ul .user-sidebar-active {
+  border-right: 3px solid #C110CD;
+  font-weight: 600;
+}
+
+.user-wrapper {
+  display: flex;
+}
+
+.user-main-page {
+  padding: 80px 150px;
+  width: 80%;
+  background-color: #170c5f;
+  font-family: "Raleway", sans-serif;
+}
+.user-main-page .user-profile-info {
+  display: flex;
+  height: 100vh;
+}
+.user-main-page .user-profile-info .user-profile-pic img {
+  border-radius: 50%;
+}
+.user-main-page .user-profile-info .user-profile-text {
+  padding: 0 70px;
+  color: #fff;
+}
+.user-main-page .user-profile-info .user-profile-text span {
+  display: block;
+  margin-top: 8px;
+}
+.user-main-page .user-profile-info .user-profile-text .user-profile-name {
+  font-size: 28px;
+  font-weight: 700;
+}
+.user-main-page .user-profile-info .user-profile-text .user-profile-job-faculty {
+  font-size: 18px;
+}
+.user-main-page .user-profile-info .user-profile-text button {
+  color: #fff;
+  text-transform: uppercase;
+  background: #C110CD;
+  padding: 10px 70px;
+  margin-top: 8px;
+}
+
+.user-teams-create-team {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+.user-teams-create-team h4 {
+  font-size: 34px;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+.user-teams-create-team p {
+  font-family: "Raleway", sans-serif;
+}
+.user-teams-create-team button {
+  text-transform: uppercase;
+  padding: 10px 100px;
+  background: #C110CD;
+  margin-top: 20px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+.user-teams-teams {
+  margin-top: 200px;
+}
+.user-teams-teams h4 {
+  font-size: 27px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.user-teams-teams .user-teams-teams-boxes .user-teams-teams-box {
+  display: flex;
+  background: #A35BFF;
+  padding: 30px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.user-teams-teams .user-teams-teams-boxes .user-teams-teams-box .user-teams-teams-box-pic {
+  margin-right: 20px;
+}
+.user-teams-teams .user-teams-teams-boxes .user-teams-teams-box .user-teams-teams-box-info h5 {
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+.user-teams-teams .user-teams-teams-boxes .user-teams-teams-box .user-teams-teams-box-info span {
+  font-size: 14px;
+}
+.user-teams-teams .user-teams-teams-boxes .user-teams-teams-box .user-teams-teams-box-btns {
+  margin-left: auto;
+}
+.user-teams-teams .user-teams-teams-boxes .user-teams-teams-box .user-teams-teams-box-btns span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.user-teams-teams .user-teams-teams-boxes .user-teams-teams-box .user-teams-teams-box-btns button {
+  margin: 0 auto;
+  padding: 10px 60px;
+  background: #C110CD;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.progress-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.progress-bar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  padding: 20px 10px;
+  border-radius: 100%;
+  background-color: #170c5f;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */

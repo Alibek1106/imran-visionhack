@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+
+    <!--  RALEWAY  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-row">
+            <a href="#"><img src="images/logo.svg" alt="logo"></a>
+            <ul>
+                <li><a href="">problems</a></li>
+                <li><a href="">identity</a></li>
+                <li><a href="">schedule</a></li>
+                <li><a href="">forms</a></li>
+                <li class="header-login"><a href="">log in</a></li>
+                <li class="header-signin"><a href="">sign in</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="user-wrapper">
+            <div class="user-sidebar">
+                <h2>User</h2>
+
+                <ul>
+                    <li><a href="user-profile.html">Profile</a></li>
+                    <li><a href="user-teams.html">Teams</a></li>
+                    <li><a href="">Team Market</a></li>
+                    <li class="user-sidebar-active"><a href="">Progress Bar</a></li>
+                </ul>
+            </div>
+
+            <div class="user-main-page">
+                <div class="progress-container">
+                    <div id="progress-bar" class="progress-bar">
+                        <div class="progress-text">33</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+            <ul class="footer-ul">
+                <li>problems</li>
+                <li>identity</li>
+                <li>schedule</li>
+                <li>forms</li>
+            </ul>
+            <div class="footer-sign">
+                <p>© VISIONHACK</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    function updateProgress(percent) {
+        var progressBar = document.getElementById("progress-bar");
+        var progressText = progressBar.querySelector(".progress-text");
+
+        var degrees = (360 * percent) / 100;
+        var color = percent > 50 ? "green" : "red"; // Задайте цвет в зависимости от процента
+
+        progressBar.style.backgroundImage = `conic-gradient(${color} ${degrees}deg, transparent ${degrees}deg)`;
+        progressText.textContent = percent + "%";
+    }
+
+    // Пример использования
+    updateProgress(document.querySelector('.progress-text').innerHTML);
+
+</script>
+</body>
+</html>

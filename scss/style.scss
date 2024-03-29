@@ -4,3 +4,8 @@
 @use "partials/index/schedule";
 @use "partials/index/forms";
 @use "partials/index/footer";
+
+@use "partials/user/user-sidebar";
+@use "partials/user/user-profile";
+@use "partials/user/user-teams";
+@use "partials/user/user-progress-bar";

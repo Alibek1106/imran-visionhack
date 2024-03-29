@@ -1,0 +1,50 @@
+.user-wrapper{
+  display: flex;
+}
+
+.user-main-page{
+  padding: 80px 150px;
+  width: 80%;
+  background-color: #170c5f;
+  font-family: "Raleway", sans-serif;
+
+
+  .user-profile-info{
+    display: flex;
+    height: 100vh;
+
+
+    .user-profile-pic{
+      img{
+        border-radius: 50%;
+      }
+    }
+
+    .user-profile-text{
+      padding: 0 70px;
+      color: #fff;
+
+      span{
+        display: block;
+        margin-top: 8px;
+      }
+
+      .user-profile-name{
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      .user-profile-job-faculty{
+        font-size: 18px;
+      }
+
+      button{
+        color: #fff;
+        text-transform: uppercase;
+        background: #C110CD;
+        padding: 10px 70px;
+        margin-top: 8px;
+      }
+    }
+  }
+}
