@@ -1,3 +1,5 @@
+@use "../../var/mixins" as *;
+
 .footer{
   padding: 40px 0;
   background: #00051F;
@@ -9,9 +11,17 @@
     justify-content: space-between;
     text-transform: uppercase;
 
+    @include md{
+      display: block;
+    }
+
 
     .footer-ul{
       display: flex;
+
+      @include md{
+        display: block;
+      }
 
       li:not(:last-child){
         margin-right: 60px;

@@ -1,3 +1,5 @@
+@use "../../var/mixins" as *;
+
 .header{
   background: #00051F;
   padding: 30px 0;
@@ -9,27 +11,84 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+
+    @include lg{
+      display: block;
+    }
 
     ul{
       display: flex;
       align-items: center;
 
+      @include lg{
+        display: block;
+        margin-top: 15px;
+      }
+
+      li{
+
+      }
 
       li:not(:last-child){
         margin-right: 30px;
+
+        @include lg{
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
       }
 
       .header-login{
         background: #B624CD4D;
         border: 1px solid #FD60D3;
         padding: 3px 20px;
+
+        @include lg{
+          display: inline-block;
+          margin-right: 10px;
+        }
       }
 
       .header-signin{
         background: #C110CD;
         padding: 3px 20px;
         box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+
+        @include lg{
+          display: inline-block;
+        }
       }
     }
+  }
+}
+
+.main-nav{
+  overflow: hidden;
+  transition: height 0.4s;
+}
+
+.nav-btn{
+  width: 44px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+  background: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  background: url('../../../images/icons/burger.svg') no-repeat;
+
+  @include lg{
+    display: block;
+  }
+}
+
+.nav-hidden{
+  height: auto;
+
+  @include lg{
+    height: 0;
   }
 }

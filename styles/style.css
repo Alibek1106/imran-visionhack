@@ -9,23 +9,84 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .header .header-row {
+    display: block;
+  }
 }
 .header .header-row ul {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .header .header-row ul {
+    display: block;
+    margin-top: 15px;
+  }
+}
 .header .header-row ul li:not(:last-child) {
   margin-right: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .header .header-row ul li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 .header .header-row ul .header-login {
   background: rgba(182, 36, 205, 0.3019607843);
   border: 1px solid #FD60D3;
   padding: 3px 20px;
 }
+@media screen and (max-width: 1024px) {
+  .header .header-row ul .header-login {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
 .header .header-row ul .header-signin {
   background: #C110CD;
   padding: 3px 20px;
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 1024px) {
+  .header .header-row ul .header-signin {
+    display: inline-block;
+  }
+}
+
+.main-nav {
+  overflow: hidden;
+  transition: height 0.4s;
+}
+
+.nav-btn {
+  width: 44px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+  background: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  background: url("../../../images/icons/burger.svg") no-repeat;
+}
+@media screen and (max-width: 1024px) {
+  .nav-btn {
+    display: block;
+  }
+}
+
+.nav-hidden {
+  height: auto;
+}
+@media screen and (max-width: 1024px) {
+  .nav-hidden {
+    height: 0;
+  }
 }
 
 .hero {
@@ -40,6 +101,11 @@
 .hero .hero-sides .hero-left {
   width: 605px;
 }
+@media screen and (max-width: 700px) {
+  .hero .hero-sides .hero-left {
+    text-align: center;
+  }
+}
 .hero .hero-sides .hero-left h1 {
   font-size: 35px;
   line-height: 120%;
@@ -49,6 +115,11 @@
 .hero .hero-sides .hero-left .hero-auth {
   display: flex;
   margin-top: 20px;
+}
+@media screen and (max-width: 700px) {
+  .hero .hero-sides .hero-left .hero-auth {
+    justify-content: center;
+  }
 }
 .hero .hero-sides .hero-left .hero-auth button {
   color: #fff;
@@ -63,6 +134,11 @@
 }
 .hero .hero-sides .hero-left .hero-auth #hero-auth-signin {
   text-decoration: underline;
+}
+@media screen and (max-width: 700px) {
+  .hero .hero-sides .hero-right {
+    display: none;
+  }
 }
 
 .problems {
@@ -108,11 +184,17 @@
 .schedule .schedule-boxes {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .schedule .schedule-boxes .schedule-box {
   background: url("../images/material/schedule-boxes-bg.svg") no-repeat;
   width: 333px;
   padding: 50px 0;
+}
+@media screen and (max-width: 480px) {
+  .schedule .schedule-boxes .schedule-box {
+    width: 100%;
+  }
 }
 .schedule .schedule-boxes .schedule-box .schedule-box-img {
   width: 206px;
@@ -150,6 +232,12 @@
   margin-left: auto;
   color: #fff;
 }
+@media screen and (max-width: 640px) {
+  .forms form .forms-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 .forms form .forms-wrapper h2 {
   text-align: center;
   font-size: 36px;
@@ -165,6 +253,11 @@
   padding: 15px 20px;
   width: 500px;
 }
+@media screen and (max-width: 640px) {
+  .forms form .forms-wrapper .form-el input {
+    width: 100%;
+  }
+}
 .forms form .forms-wrapper button {
   text-transform: uppercase;
   color: #fff;
@@ -172,6 +265,11 @@
   background: #C110CD;
   padding: 17px 0;
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 640px) {
+  .forms form .forms-wrapper button {
+    width: 100%;
+  }
 }
 
 .footer {
@@ -185,8 +283,18 @@
   justify-content: space-between;
   text-transform: uppercase;
 }
+@media screen and (max-width: 840px) {
+  .footer .footer-wrapper {
+    display: block;
+  }
+}
 .footer .footer-wrapper .footer-ul {
   display: flex;
+}
+@media screen and (max-width: 840px) {
+  .footer .footer-wrapper .footer-ul {
+    display: block;
+  }
 }
 .footer .footer-wrapper .footer-ul li:not(:last-child) {
   margin-right: 60px;

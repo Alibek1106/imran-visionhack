@@ -1,3 +1,5 @@
+@use "../../var/mixins" as *;
+
 .schedule{
   background: url("../images/material/schedule-bg.png");
   padding: 80px 0;
@@ -13,11 +15,16 @@
   .schedule-boxes{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .schedule-box{
       background: url("../images/material/schedule-boxes-bg.svg") no-repeat;
       width: 333px;
       padding: 50px 0;
+
+      @include xsm{
+        width: 100%;
+      }
 
       .schedule-box-img{
         width: 206px;
